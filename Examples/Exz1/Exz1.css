@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr 500px 1fr;
+    grid-template-rows: 150px 300px 100px;
+    grid-template-areas: ". header ." ". content ." ". footer .";
+    grid-gap:1em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 15px; color:#fff;
+}
+
+.header{grid-area: header; background: #3399ff;}
+.content{grid-area: content; background:rgba(0, 102, 204, 100);}
+.footer{grid-area: footer; background: #003366;}
